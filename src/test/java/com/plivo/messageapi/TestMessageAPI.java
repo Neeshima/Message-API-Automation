@@ -61,6 +61,7 @@ public class TestMessageAPI {
 	@Test(priority = 0)
 	public void getAccountDetails_BeforeSendMessage() {
 
+		RestAssured.basePath = "/";
 		Response accountDetailsResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN).when().get();
 		Assert.assertEquals(accountDetailsResponse.statusCode(), OK, RESPONSE_ERROR_MESSAGE);
 		printResponse(accountDetailsResponse);
@@ -72,7 +73,7 @@ public class TestMessageAPI {
 	@Test(priority = 1)
 	public void testGetListOfNumbers() {
 
-		RestAssured.basePath = "/Number";
+		RestAssured.basePath = "/Number/";
 		getNumberListResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN).when().get();
 		printResponse(getNumberListResponse);
 
@@ -88,15 +89,15 @@ public class TestMessageAPI {
 			String srcNumber = numbers.get(0);
 			String destNumber = numbers.get(1);
 
-			RestAssured.basePath = "/Message";
+			RestAssured.basePath = "/Message/";
 			Map<String, String> queryParams = new HashMap<>();
 			queryParams.put(Constants.QUERY_PARAM_SRC, srcNumber);
 			queryParams.put(Constants.QUERY_PARAM_DST, destNumber);
 			queryParams.put(Constants.QUERY_PARAM_TEXT, TEXT_MESSAGE);
 
 			sendMessageResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN)
-					.header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_MESSAGE_API).queryParameters(queryParams)
-					.when().post();
+					.header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_MESSAGE_API).params(queryParams).when()
+					.post();
 			printResponse(sendMessageResponse);
 			Assert.assertEquals(sendMessageResponse.statusCode(), ACCEPTED, RESPONSE_ERROR_MESSAGE);
 
@@ -110,7 +111,7 @@ public class TestMessageAPI {
 	public void testMessageDetailsApi() {
 
 		String messageUuid = getMessageUUID(sendMessageResponse);
-		RestAssured.basePath = "/Message/" + messageUuid;
+		RestAssured.basePath = "/Message/" + messageUuid + "/";
 
 		messageDetailsResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN).when().get();
 		printResponse(messageDetailsResponse);
@@ -121,7 +122,7 @@ public class TestMessageAPI {
 	@Test(priority = 4, dependsOnMethods = { "testMessageDetailsApi" })
 	public void testPricingApi() {
 
-		RestAssured.basePath = "/Pricing";
+		RestAssured.basePath = "/Pricing/";
 		Map<String, String> pathParams = new HashMap<>();
 		pathParams.put(Constants.PATH_PARAM_COUNTRY_CODE, COUNTRY_CODE);
 
@@ -143,7 +144,7 @@ public class TestMessageAPI {
 	@Test(priority = 6, dependsOnMethods = { "testSentMessagePrice" })
 	public void testAccountDetailsApi_AfterSendMessage() {
 
-		RestAssured.basePath = "";
+		RestAssured.basePath = "/";
 		Response accountDetailsResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN).when().get();
 		printResponse(accountDetailsResponse);
 		Assert.assertEquals(accountDetailsResponse.statusCode(), OK, RESPONSE_ERROR_MESSAGE);
