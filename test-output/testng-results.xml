@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="1" total="7" passed="2">
+<testng-results skipped="1" failed="1" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7609" started-at="2018-10-15T14:37:04Z" finished-at="2018-10-15T14:37:11Z">
+  <suite name="Default suite" duration-ms="12991" started-at="2018-10-16T13:20:26Z" finished-at="2018-10-16T13:20:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7609" started-at="2018-10-15T14:37:04Z" finished-at="2018-10-15T14:37:11Z">
+    <test name="Default test" duration-ms="12991" started-at="2018-10-16T13:20:26Z" finished-at="2018-10-16T13:20:39Z">
       <class name="com.plivo.messageapi.TestMessageAPI">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="setUp" is-config="true" duration-ms="351" started-at="2018-10-15T20:07:04Z" finished-at="2018-10-15T20:07:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="setUp" is-config="true" duration-ms="307" started-at="2018-10-16T18:50:26Z" finished-at="2018-10-16T18:50:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getAccountDetails_BeforeSendMessage()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="getAccountDetails_BeforeSendMessage" duration-ms="3344" started-at="2018-10-15T20:07:04Z" finished-at="2018-10-15T20:07:08Z">
+        <test-method status="PASS" signature="getAccountDetails_BeforeSendMessage()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="getAccountDetails_BeforeSendMessage" duration-ms="4812" started-at="2018-10-16T18:50:27Z" finished-at="2018-10-16T18:50:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAccountDetails_BeforeSendMessage -->
-        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-15T20:07:04Z" finished-at="2018-10-15T20:07:04Z">
+        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:27Z" finished-at="2018-10-16T18:50:27Z">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-15T20:07:08Z" finished-at="2018-10-15T20:07:08Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:32Z" finished-at="2018-10-16T18:50:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="testGetListOfNumbers()[pri:1, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testGetListOfNumbers" duration-ms="2098" started-at="2018-10-15T20:07:08Z" finished-at="2018-10-15T20:07:10Z">
+        <test-method status="PASS" signature="testGetListOfNumbers()[pri:1, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testGetListOfNumbers" duration-ms="1894" started-at="2018-10-16T18:50:32Z" finished-at="2018-10-16T18:50:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetListOfNumbers -->
-        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-15T20:07:08Z" finished-at="2018-10-15T20:07:08Z">
+        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:32Z" finished-at="2018-10-16T18:50:32Z">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-15T20:07:10Z" finished-at="2018-10-15T20:07:10Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:33Z" finished-at="2018-10-16T18:50:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="1" started-at="2018-10-15T20:07:10Z" finished-at="2018-10-15T20:07:10Z">
+        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:33Z" finished-at="2018-10-16T18:50:33Z">
           <params>
             <param index="0">
               <value>
@@ -60,19 +60,76 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="testMessageApi_SendMessage()[pri:2, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testMessageApi_SendMessage" duration-ms="1789" started-at="2018-10-15T20:07:10Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testGetListOfNumbers" finished-at="2018-10-15T20:07:11Z">
+        <test-method status="PASS" signature="testMessageApi_SendMessage()[pri:2, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testMessageApi_SendMessage" duration-ms="1904" started-at="2018-10-16T18:50:33Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testGetListOfNumbers" finished-at="2018-10-16T18:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMessageApi_SendMessage -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:35Z" finished-at="2018-10-16T18:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:35Z" finished-at="2018-10-16T18:50:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.plivo.messageapi.TestMessageAPI.testMessageDetailsApi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testMessageDetailsApi()[pri:3, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testMessageDetailsApi" duration-ms="1802" started-at="2018-10-16T18:50:35Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testMessageApi_SendMessage" finished-at="2018-10-16T18:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMessageDetailsApi -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="1" started-at="2018-10-16T18:50:37Z" finished-at="2018-10-16T18:50:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:37Z" finished-at="2018-10-16T18:50:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.plivo.messageapi.TestMessageAPI.testPricingApi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testPricingApi()[pri:4, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testPricingApi" duration-ms="2243" started-at="2018-10-16T18:50:37Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testMessageDetailsApi" finished-at="2018-10-16T18:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPricingApi -->
+        <test-method status="PASS" signature="before(java.lang.reflect.Method)[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="before" is-config="true" duration-ms="1" started-at="2018-10-16T18:50:39Z" finished-at="2018-10-16T18:50:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.plivo.messageapi.TestMessageAPI.testSentMessagePrice()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-16T18:50:39Z" finished-at="2018-10-16T18:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="FAIL" signature="testSentMessagePrice()[pri:5, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testSentMessagePrice" duration-ms="4" started-at="2018-10-16T18:50:39Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testMessageDetailsApi, com.plivo.messageapi.TestMessageAPI.testPricingApi" finished-at="2018-10-16T18:50:39Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unexpected response status code !!! expected [202] but found [400]]]>
+              <![CDATA[Mismatch in the price charged for sent message !!! expected [0.00350] but found [0.00000]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unexpected response status code !!! expected [202] but found [400]
+              <![CDATA[java.lang.AssertionError: Mismatch in the price charged for sent message !!! expected [0.00350] but found [0.00000]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:389)
-	at com.plivo.messageapi.TestMessageAPI.testMessageApi_SendMessage(TestMessageAPI.java:104)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.plivo.messageapi.TestMessageAPI.testSentMessagePrice(TestMessageAPI.java:139)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,102 +159,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMessageApi_SendMessage -->
-        <test-method status="SKIP" signature="testMessageDetailsApi()[pri:3, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testMessageDetailsApi" duration-ms="0" started-at="2018-10-15T20:07:11Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testMessageApi_SendMessage" finished-at="2018-10-15T20:07:11Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestMessageAPI.testMessageDetailsApi()[pri:3, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestMessageAPI.testMessageDetailsApi()[pri:3, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMessageDetailsApi -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="0" started-at="2018-10-15T20:07:11Z" finished-at="2018-10-15T20:07:11Z">
+        </test-method> <!-- testSentMessagePrice -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="after" is-config="true" duration-ms="1" started-at="2018-10-16T18:50:39Z" finished-at="2018-10-16T18:50:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="SKIP" signature="testPricingApi()[pri:4, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testPricingApi" duration-ms="0" started-at="2018-10-15T20:07:11Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testMessageDetailsApi" finished-at="2018-10-15T20:07:11Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestMessageAPI.testPricingApi()[pri:4, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestMessageAPI.testPricingApi()[pri:4, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPricingApi -->
-        <test-method status="SKIP" signature="testSentMessagePrice()[pri:5, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testSentMessagePrice" duration-ms="0" started-at="2018-10-15T20:07:11Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testMessageDetailsApi, com.plivo.messageapi.TestMessageAPI.testPricingApi" finished-at="2018-10-15T20:07:11Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestMessageAPI.testSentMessagePrice()[pri:5, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestMessageAPI.testSentMessagePrice()[pri:5, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSentMessagePrice -->
-        <test-method status="SKIP" signature="testAccountDetailsApi_AfterSendMessage()[pri:6, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testAccountDetailsApi_AfterSendMessage" duration-ms="0" started-at="2018-10-15T20:07:11Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testSentMessagePrice" finished-at="2018-10-15T20:07:11Z">
+        <test-method status="SKIP" signature="testAccountDetailsApi_AfterSendMessage()[pri:6, instance:com.plivo.messageapi.TestMessageAPI@523884b2]" name="testAccountDetailsApi_AfterSendMessage" duration-ms="0" started-at="2018-10-16T18:50:39Z" depends-on-methods="com.plivo.messageapi.TestMessageAPI.testSentMessagePrice" finished-at="2018-10-16T18:50:39Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method TestMessageAPI.testAccountDetailsApi_AfterSendMessage()[pri:6, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods]]>

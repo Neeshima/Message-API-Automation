@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,  4 skipped,  2 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,  1 skipped,  5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testMessageApi_SendMessage">testMessageApi_SendMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testSentMessagePrice">testSentMessagePrice</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,21 +117,6 @@
                       <span>
                         <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testAccountDetailsApi_AfterSendMessage">testAccountDetailsApi_AfterSendMessage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testMessageDetailsApi">testMessageDetailsApi</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testPricingApi">testPricingApi</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testSentMessagePrice">testSentMessagePrice</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -151,6 +136,21 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testGetListOfNumbers">testGetListOfNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testMessageApi_SendMessage">testMessageApi_SendMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testMessageDetailsApi">testMessageDetailsApi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.plivo.messageapi.TestMessageAPI" hash-for-method="testPricingApi">testPricingApi</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -173,16 +173,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMessageApi_SendMessage">
-                  </a> <!-- testMessageApi_SendMessage -->
-                  <span class="method-name">testMessageApi_SendMessage</span>
-                  <div class="stack-trace">java.lang.AssertionError: Unexpected response status code !!! expected [202] but found [400]
+                  <a name="testSentMessagePrice">
+                  </a> <!-- testSentMessagePrice -->
+                  <span class="method-name">testSentMessagePrice</span>
+                  <div class="stack-trace">java.lang.AssertionError: Mismatch in the price charged for sent message !!! expected [0.00350] but found [0.00000]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:389)
-	at com.plivo.messageapi.TestMessageAPI.testMessageApi_SendMessage(TestMessageAPI.java:104)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.plivo.messageapi.TestMessageAPI.testSentMessagePrice(TestMessageAPI.java:139)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,87 +246,6 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMessageDetailsApi">
-                  </a> <!-- testMessageDetailsApi -->
-                  <span class="method-name">testMessageDetailsApi</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestMessageAPI.testMessageDetailsApi()[pri:3, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPricingApi">
-                  </a> <!-- testPricingApi -->
-                  <span class="method-name">testPricingApi</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestMessageAPI.testPricingApi()[pri:4, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSentMessagePrice">
-                  </a> <!-- testSentMessagePrice -->
-                  <span class="method-name">testSentMessagePrice</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestMessageAPI.testSentMessagePrice()[pri:5, instance:com.plivo.messageapi.TestMessageAPI@523884b2] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-skipped -->
           <div class="suite-Default_suite-class-passed">
@@ -349,12 +268,33 @@
                   <span class="method-name">testGetListOfNumbers</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMessageApi_SendMessage">
+                  </a> <!-- testMessageApi_SendMessage -->
+                  <span class="method-name">testMessageApi_SendMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMessageDetailsApi">
+                  </a> <!-- testMessageDetailsApi -->
+                  <span class="method-name">testMessageDetailsApi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPricingApi">
+                  </a> <!-- testPricingApi -->
+                  <span class="method-name">testPricingApi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/_g/13b_lgcd4ml8y6k631r2p6jj9w4dd_/T/testng-eclipse--1846831224/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/_g/13b_lgcd4ml8y6k631r2p6jj9w4dd_/T/testng-eclipse-227419697/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -407,36 +347,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getAccountDetails_BeforeSendMessage')
 data.setCell(0, 2, 'com.plivo.messageapi.TestMessageAPI')
-data.setCell(0, 3, 3344);
+data.setCell(0, 3, 4812);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGetListOfNumbers')
+data.setCell(1, 1, 'testPricingApi')
 data.setCell(1, 2, 'com.plivo.messageapi.TestMessageAPI')
-data.setCell(1, 3, 2098);
+data.setCell(1, 3, 2243);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testMessageApi_SendMessage')
 data.setCell(2, 2, 'com.plivo.messageapi.TestMessageAPI')
-data.setCell(2, 3, 1789);
+data.setCell(2, 3, 1904);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testPricingApi')
+data.setCell(3, 1, 'testGetListOfNumbers')
 data.setCell(3, 2, 'com.plivo.messageapi.TestMessageAPI')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 1894);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testMessageDetailsApi')
 data.setCell(4, 2, 'com.plivo.messageapi.TestMessageAPI')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1802);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testAccountDetailsApi_AfterSendMessage')
+data.setCell(5, 1, 'testSentMessagePrice')
 data.setCell(5, 2, 'com.plivo.messageapi.TestMessageAPI')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 4);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testSentMessagePrice')
+data.setCell(6, 1, 'testAccountDetailsApi_AfterSendMessage')
 data.setCell(6, 2, 'com.plivo.messageapi.TestMessageAPI')
 data.setCell(6, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -469,41 +409,77 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">before(public void com.plivo.messageapi.TestMessageAPI.getAccountDetails_BeforeSendMessage())</span>
-                <span class="method-start">356 ms</span>
+                <span class="method-start">310 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getAccountDetails_BeforeSendMessage</span>
-                <span class="method-start">356 ms</span>
+                <span class="method-start">310 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">3701 ms</span>
+                <span class="method-start">5123 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before(public void com.plivo.messageapi.TestMessageAPI.testGetListOfNumbers())</span>
-                <span class="method-start">3702 ms</span>
+                <span class="method-start">5124 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testGetListOfNumbers</span>
-                <span class="method-start">3702 ms</span>
+                <span class="method-start">5124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">5801 ms</span>
+                <span class="method-start">7019 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before(public void com.plivo.messageapi.TestMessageAPI.testMessageApi_SendMessage())</span>
-                <span class="method-start">5803 ms</span>
+                <span class="method-start">7021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMessageApi_SendMessage</span>
+                <span class="method-start">7021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">8926 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before(public void com.plivo.messageapi.TestMessageAPI.testMessageDetailsApi())</span>
+                <span class="method-start">8927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMessageDetailsApi</span>
+                <span class="method-start">8927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">10730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before(public void com.plivo.messageapi.TestMessageAPI.testPricingApi())</span>
+                <span class="method-start">10731 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPricingApi</span>
+                <span class="method-start">10731 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">12976 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before(public void com.plivo.messageapi.TestMessageAPI.testSentMessagePrice())</span>
+                <span class="method-start">12976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testMessageApi_SendMessage</span>
-                <span class="method-start">5804 ms</span>
+                <span class="method-name">testSentMessagePrice</span>
+                <span class="method-start">12977 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">7596 ms</span>
+                <span class="method-start">12983 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

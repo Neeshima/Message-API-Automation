@@ -95,8 +95,7 @@ public class TestMessageAPI {
 			queryParams.put(Constants.QUERY_PARAM_DST, destNumber);
 			queryParams.put(Constants.QUERY_PARAM_TEXT, TEXT_MESSAGE);
 
-			sendMessageResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN)
-					.header(Constants.CONTENT_TYPE, Constants.CONTENT_TYPE_MESSAGE_API).params(queryParams).when()
+			sendMessageResponse = RestAssured.given().auth().basic(AUTH_ID, AUTH_TOKEN).params(queryParams).when()
 					.post();
 			printResponse(sendMessageResponse);
 			Assert.assertEquals(sendMessageResponse.statusCode(), ACCEPTED, RESPONSE_ERROR_MESSAGE);
@@ -173,7 +172,7 @@ public class TestMessageAPI {
 
 		JSONObject responseObject = new JSONObject(sendMessageResponse.getBody().asString());
 
-		return responseObject.getString("message_uuid");
+		return responseObject.getJSONArray("message_uuid").getString(0);
 	}
 
 	private List<String> getListOfNumbers(Response getNumberListResponse) {
